@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Parts</title>
+</head>
+<body>
+	<select
+		th:fragment="select1">
+        <option value="1">select11</option>
+        <option value="2">select12</option>
+        <option value="3">select13</option>
+	</select>
+	<select
+		th:fragment="2select">
+	    <option value="1">2select1</option>
+	    <option value="2">2select2</option>
+	    <option value="3">2select3</option>
+	</select>
+	<select
+		th:fragment="3select3">
+	    <option value="1">3select31</option>
+	    <option value="2">3select32</option>
+	    <option value="3">3select33</option>
+	</select>
+	<select
+		th:fragment="4sel4">
+	    <option value="1">4sel41</option>
+	    <option value="2">4sel42</option>
+	    <option value="3">4sel43</option>
+	</select>
+
+	<div th:fragment="div1">div1</div>
+	<div th:fragment="2div">2div</div>
+	<div th:fragment="3div3">3div3</div>
+	<div th:fragment="4div4">4div4</div>
+</body>
+</html>

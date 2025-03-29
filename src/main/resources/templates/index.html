@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Fragment Sample</title>
+</head>
+<body>
+	<h1>Fragment Sample</h1>
+	<h2>SELECTタグ</h2>
+		<div>前方一致：th:insert="~{parts :: select1}"
+			<div th:insert="~{parts :: select1}"></div>
+		</div>
+		<div>後方一致：th:insert="~{parts :: 2select}"
+			<div th:insert="~{parts :: 2select}"></div>	
+		</div>
+		<div>部分一致：th:insert="~{parts :: 3select3}"
+			<div th:insert="~{parts :: 3select3}"></div>
+		</div>
+		<div>一致しない：th:insert="~{parts :: 4sel4}"
+			<div th:insert="~{parts :: 4sel4}"></div>
+		</div>	
+		<div>th:insert="~{parts :: select}"
+			<div th:insert="~{parts :: select}"></div>
+		</div>
+	<h2>DIVタグ</h2>
+        <div>前方一致：th:insert="~{parts :: div1}"
+            <div th:insert="~{parts :: div1}"></div>
+        </div>
+        <div>後方一致：th:insert="~{parts :: 2div}"
+            <div th:insert="~{parts :: 2div}"></div>	
+        </div>
+        <div>部分一致：th:insert="~{parts :: 3div3}"
+            <div th:insert="~{parts :: 3div3}"></div>
+        </div>
+        <div>一致しない：th:insert="~{parts :: 4div4}"
+            <div th:insert="~{parts :: 4div4}"></div>
+        </div>	
+        <div>th:insert="~{parts :: div}"
+            <div th:insert="~{parts :: div}"></div>
+        </div>
+<!--
+	<h2>SPANタグ</h2>
+	<div>th:insert="~{parts :: span}"
+	    <div th:insert="~{parts :: span}"></div>
+	</div>
+-->
+</body>
+</html>
